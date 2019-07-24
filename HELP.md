@@ -1,14 +1,7 @@
-# Getting Started
-
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-
+event-driven architecture
+1.loose coupling
+with the event-driven architecture ,we can achieve loose coupling between out service
+2.transactions
+on the other hand, in an architecture based on event we need to assume that we don't need ACID,instead of it is eventual consistency 
+3.fault tolerance
+as a sequence of not having transactions, fault tolerance become more important
