@@ -34,6 +34,12 @@ public final class MultiplicationResultAttemptController {
         return ResponseEntity.ok(multiplicationService.getStatesForUser(alias));
     }
 
+    @GetMapping
+    @RequestMapping("/{resultId}")
+    ResponseEntity<MultiplicationResultAttempt> getResultById(@PathVariable("resultId") Long resultId) {
+        return ResponseEntity.ok(multiplicationService.getResultById(resultId));
+    }
+
     @RequiredArgsConstructor
     @ToString
     @Getter
