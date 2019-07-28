@@ -3,6 +3,7 @@ package microservices.multiplication.controller;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
 import microservices.multiplication.domain.MultiplicationResultAttempt;
 import microservices.multiplication.service.MultiplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/results")
+@Slf4j
 public final class MultiplicationResultAttemptController {
 
     private final MultiplicationService multiplicationService;
@@ -24,6 +26,7 @@ public final class MultiplicationResultAttemptController {
 
     @PostMapping
     ResponseEntity<MultiplicationResultAttempt> postResult(@RequestBody MultiplicationResultAttempt multiplicationResultAttempt) {
+        log.info("start postResult method");
         boolean isCorrect = multiplicationService.checkAttempt(multiplicationResultAttempt);
         MultiplicationResultAttempt multiplicationResultAttempt1 = new MultiplicationResultAttempt(multiplicationResultAttempt.getUser(), multiplicationResultAttempt.getMultiplication(), multiplicationResultAttempt.getResultAttempt(), isCorrect);
         return ResponseEntity.ok(multiplicationResultAttempt1);
