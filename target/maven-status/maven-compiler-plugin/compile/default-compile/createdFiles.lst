@@ -11,6 +11,7 @@ microservices/multiplication/domain/User.class
 microservices/multiplication/controller/MultiplicationController.class
 microservices/multiplication/service/RandomGeneratorServiceImpl.class
 microservices/multiplication/domain/Multiplication.class
+microservices/multiplication/configure/WebConfiguration.class
 microservices/multiplication/controller/MultiplicationResultAttemptController$ResultResponse.class
 microservices/multiplication/configure/RabbitMQConfiguration.class
 microservices/multiplication/domain/MultiplicationResultAttempt.class

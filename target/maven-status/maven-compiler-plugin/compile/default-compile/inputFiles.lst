@@ -13,4 +13,5 @@
 /Users/yongqwang/Downloads/social-multiplication/microservices-practical/src/main/java/microservices/multiplication/repository/MultiplicationResultAttemptRepository.java
 /Users/yongqwang/Downloads/social-multiplication/microservices-practical/src/main/java/microservices/multiplication/service/RandomGeneratorService.java
 /Users/yongqwang/Downloads/social-multiplication/microservices-practical/src/main/java/microservices/multiplication/event/MultiplicationSolvedEvent.java
+/Users/yongqwang/Downloads/social-multiplication/microservices-practical/src/main/java/microservices/multiplication/configure/WebConfiguration.java
 /Users/yongqwang/Downloads/social-multiplication/microservices-practical/src/main/java/microservices/multiplication/controller/MultiplicationController.java

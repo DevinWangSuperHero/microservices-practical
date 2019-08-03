@@ -7,12 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gamification" />
-        <module name="social-multiplication" />
+        <module name="gateway" />
+        <module name="multiplication" />
+        <module name="service-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gamification" target="1.8" />
-      <module name="social-multiplication" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="multiplication" target="1.8" />
+      <module name="service-registry" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
